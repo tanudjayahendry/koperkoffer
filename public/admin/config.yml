@@ -2,6 +2,14 @@ backend:
   name: git-gateway
   branch: main
 
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: "${CLOUDINARY_CLOUD_NAME}"
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
+
 media_folder: "public/uploads"
 public_folder: "/uploads"
 
@@ -18,7 +26,13 @@ collections:
       - { name: price_public, label: Price Public, widget: number }
       - { name: price_reseller, label: Price Reseller, widget: number }
       - { name: currency, label: Currency }
-      - { name: images, label: Images, widget: list, field: {label: Image, name: image, widget: image} }
+      - label: Images
+        name: images
+        widget: list
+        field:
+          label: Image URL
+          name: image
+          widget: string
       - { name: description, label: Description, widget: text }
       - { name: active, label: Active, widget: boolean }
 
@@ -53,7 +67,12 @@ collections:
         label: "FAQ Items"
         file: "content/faq/faq.json"
         fields:
-          - { name: items, label: Items, widget: list, fields: [{name: q, label: Question}, {name: a, label: Answer}] }
+          - name: items
+            label: Items
+            widget: list
+            fields:
+              - { name: q, label: Question }
+              - { name: a, label: Answer }
 
   - name: "howitworks"
     label: "How It Works"
@@ -62,4 +81,9 @@ collections:
         label: "How It Works"
         file: "content/howitworks/howitworks.json"
         fields:
-          - { name: steps, label: Steps, widget: list, field: {name: step, label: Step} }
+          - name: steps
+            label: Steps
+            widget: list
+            field:
+              name: step
+              label: Step
