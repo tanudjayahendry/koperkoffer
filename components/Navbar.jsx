@@ -8,46 +8,80 @@ export default function Navbar() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
-  const linkClass = (path) =>
-    `px-3 py-2 rounded-lg text-sm font-semibold ${
-      pathname === path
-        ? "bg-kk-yellow text-kk-text"
-        : "text-kk-text hover:bg-kk-blue"
+  const isActive = (path) => pathname === path;
+
+  const linkBase =
+    "text-sm font-medium tracking-wide px-3 py-2 rounded-md transition";
+
+  const desktopLinkClass = (path) =>
+    `${linkBase} ${
+      isActive(path)
+        ? "text-kk-cream bg-kk-border"
+        : "text-kk-muted hover:text-kk-cream hover:bg-kk-border/60"
+    }`;
+
+  const mobileLinkClass = (path) =>
+    `${linkBase} ${
+      isActive(path)
+        ? "text-kk-cream bg-kk-border"
+        : "text-kk-muted hover:text-kk-cream hover:bg-kk-border/60"
     }`;
 
   return (
-    <nav className="w-full bg-white border-b border-kk-text/10 mb-6 sticky top-0 z-50">
-      <div className="max-w-4xl mx-auto flex items-center justify-between p-4">
-        
-        {/* Logo */}
-        <Link href="/" className="font-bold text-kk-text text-lg">
-          KoperKoffer
+    <nav className="w-full border-b border-kk-border/70 bg-kk-navy/95 backdrop-blur sticky top-0 z-50">
+      <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
+        {/* Logo / brand */}
+        <Link href="/" className="flex items-center gap-2">
+          <span className="text-sm font-semibold uppercase tracking-[0.25em] text-kk-muted">
+            KOPER
+          </span>
+          <span className="w-[1px] h-4 bg-kk-border" />
+          <span className="text-sm font-semibold uppercase tracking-[0.25em] text-kk-muted">
+            KOFFER
+          </span>
         </Link>
+
+        {/* Desktop nav */}
+        <div className="hidden sm:flex items-center gap-2">
+          <Link href="/" className={desktopLinkClass("/")}>
+            Home
+          </Link>
+          <Link href="/faq" className={desktopLinkClass("/faq")}>
+            FAQ
+          </Link>
+          <Link href="/cara-titip" className={desktopLinkClass("/cara-titip")}>
+            Cara Titip
+          </Link>
+          <Link href="/partner" className={desktopLinkClass("/partner")}>
+            Partner
+          </Link>
+        </div>
 
         {/* Mobile toggle */}
         <button
-          className="sm:hidden text-kk-text"
-          onClick={() => setOpen(!open)}
+          className="sm:hidden text-kk-muted"
+          onClick={() => setOpen((o) => !o)}
+          aria-label="Toggle menu"
         >
-          ☰
+          {open ? "✕" : "☰"}
         </button>
-
-        {/* Desktop menu */}
-        <div className="hidden sm:flex gap-4">
-          <Link href="/" className={linkClass("/")}>Home</Link>
-          <Link href="/faq" className={linkClass("/faq")}>FAQ</Link>
-          <Link href="/cara-titip" className={linkClass("/cara-titip")}>Cara Titip</Link>
-          <Link href="/partner" className={linkClass("/partner")}>Partner</Link>
-        </div>
       </div>
 
-      {/* Mobile dropdown */}
+      {/* Mobile menu */}
       {open && (
-        <div className="sm:hidden flex flex-col gap-2 p-4 border-t border-kk-text/10 bg-white">
-          <Link href="/" className={linkClass("/")}>Home</Link>
-          <Link href="/faq" className={linkClass("/faq")}>FAQ</Link>
-          <Link href="/cara-titip" className={linkClass("/cara-titip")}>Cara Titip</Link>
-          <Link href="/partner" className={linkClass("/partner")}>Partner</Link>
+        <div className="sm:hidden border-t border-kk-border/70 bg-kk-navy px-4 pb-3 flex flex-col gap-1">
+          <Link href="/" className={mobileLinkClass("/")}>
+            Home
+          </Link>
+          <Link href="/faq" className={mobileLinkClass("/faq")}>
+            FAQ
+          </Link>
+          <Link href="/cara-titip" className={mobileLinkClass("/cara-titip")}>
+            Cara Titip
+          </Link>
+          <Link href="/partner" className={mobileLinkClass("/partner")}>
+            Partner
+          </Link>
         </div>
       )}
     </nav>

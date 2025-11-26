@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 body {
-  background: white;
-  color: #4A4A4A; /* kk-text */
-  font-family: 'Inter', sans-serif;
+  background: #050816; /* kk.navy */
+  color: #F5F0E8;      /* kk.cream */
+  font-family: 'Inter', system-ui, sans-serif;
+}
+
+a {
+  text-decoration: none;
 }

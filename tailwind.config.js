@@ -8,15 +8,15 @@ module.exports = {
     extend: {
       colors: {
         kk: {
-          yellow: "#FFEBAA",
-          blue: "#CDEBFF",
-          peach: "#FFD8CC",
-          mint: "#D9FFEF",
-          text: "#4A4A4A",
+          navy: "#050816",
+          cream: "#F5F0E8",
+          accent: "#D4AF37", // gold
+          muted: "#9CA3AF",
+          border: "#1F2933",
         },
       },
       fontFamily: {
-        sans: ["Inter", "sans-serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },
