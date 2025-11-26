@@ -1,0 +1,65 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    format: "json"
+    fields:
+      - { name: id, label: ID }
+      - { name: title, label: Title }
+      - { name: direction, label: Direction, widget: select, options: ["DE_TO_ID", "ID_TO_DE"] }
+      - { name: price_public, label: Price Public, widget: number }
+      - { name: price_reseller, label: Price Reseller, widget: number }
+      - { name: currency, label: Currency }
+      - { name: images, label: Images, widget: list, field: {label: Image, name: image, widget: image} }
+      - { name: description, label: Description, widget: text }
+      - { name: active, label: Active, widget: boolean }
+
+  - name: "batches"
+    label: "Batches"
+    folder: "content/batches"
+    create: true
+    format: "json"
+    fields:
+      - { name: id, label: ID }
+      - { name: direction, label: Direction, widget: select, options: ["DE_TO_ID", "ID_TO_DE"] }
+      - { name: from_label, label: From Label }
+      - { name: receive_until, label: Receive Until }
+      - { name: arrival_estimate_text, label: Arrival Estimate Text }
+      - { name: status, label: Status, widget: select, options: ["OPEN", "COMING_SOON", "CLOSED"] }
+      - { name: note, label: Note, widget: text, required: false }
+
+  - name: "config"
+    label: "Site Config"
+    files:
+      - name: "site"
+        label: "Site Config"
+        file: "content/config/site.json"
+        fields:
+          - { name: whatsapp_number, label: WhatsApp Number }
+          - { name: whatsapp_template, label: WhatsApp Template }
+
+  - name: "faq"
+    label: "FAQ"
+    files:
+      - name: "faq_items"
+        label: "FAQ Items"
+        file: "content/faq/faq.json"
+        fields:
+          - { name: items, label: Items, widget: list, fields: [{name: q, label: Question}, {name: a, label: Answer}] }
+
+  - name: "howitworks"
+    label: "How It Works"
+    files:
+      - name: "how_it_works"
+        label: "How It Works"
+        file: "content/howitworks/howitworks.json"
+        fields:
+          - { name: steps, label: Steps, widget: list, field: {name: step, label: Step} }

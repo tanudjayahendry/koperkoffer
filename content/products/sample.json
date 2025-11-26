@@ -1,0 +1,11 @@
+{
+  "id": "sample-product",
+  "title": "Contoh Produk",
+  "direction": "DE_TO_ID",
+  "price_public": 20,
+  "price_reseller": 15,
+  "currency": "EUR",
+  "images": [],
+  "description": "Produk contoh",
+  "active": true
+}
