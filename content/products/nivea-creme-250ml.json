@@ -1,0 +1,13 @@
+{
+  "id": "nivea-creme-250ml",
+  "title": "NIVEA Creme 250 ml (Made in Germany)",
+  "direction": "DE_TO_ID",
+  "price_public": 12.5,
+  "price_reseller": 10,
+  "currency": "EUR",
+  "images": [
+    "https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v123456789/nivea-creme-250ml.jpg"
+  ],
+  "description": "NIVEA Creme 250 ml original dari Jerman. Cocok untuk kulit kering, kemasan kaleng biru ikonik.",
+  "active": true
+}

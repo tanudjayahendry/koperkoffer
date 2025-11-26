@@ -1,6 +1,28 @@
 {
   "items": [
-    { "q": "Apa itu jastip?", "a": "Titip barang dari luar negeri." },
-    { "q": "Apakah aman?", "a": "Ya, sangat aman." }
+    {
+      "q": "Apa itu KoperKoffer?",
+      "a": "KoperKoffer adalah layanan titip barang antara Jerman dan Indonesia. Anda kirim detail barang, kami bantu pengiriman berdasarkan jadwal batch yang tersedia."
+    },
+    {
+      "q": "Bagaimana cara titip barang?",
+      "a": "Anda cukup hubungi kami via WhatsApp, kirim link produk atau detail barang, lalu kami informasikan estimasi biaya, jadwal batch, dan langkah pembayaran."
+    },
+    {
+      "q": "Barang apa saja yang bisa dititip?",
+      "a": "Umumnya skincare, makanan kemasan, fashion ringan, kopi, dan snack. Barang berbahaya, cairan berlebih, dan barang yang dilarang peraturan bea cukai tidak dapat kami terima."
+    },
+    {
+      "q": "Bagaimana perhitungan harga?",
+      "a": "Harga bergantung pada berat/volume, nilai barang, dan rute pengiriman. Setelah Anda kirim detail barang, kami berikan estimasi total sebelum Anda konfirmasi."
+    },
+    {
+      "q": "Berapa lama estimasi sampai?",
+      "a": "Estimasi mengikuti jadwal batch yang tertera di website. Rata-rata 2–4 minggu dari batas penerimaan barang, tergantung rute dan kondisi pengiriman."
+    },
+    {
+      "q": "Bagaimana metode pembayaran?",
+      "a": "Untuk transaksi dari Jerman umumnya melalui transfer bank atau fintech yang disepakati. Detail pembayaran kami kirimkan langsung melalui WhatsApp setelah order disetujui."
+    }
   ]
 }

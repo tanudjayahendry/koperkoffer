@@ -74,16 +74,12 @@ collections:
               - { name: q, label: Question }
               - { name: a, label: Answer }
 
-  - name: "howitworks"
+    -name: "howitworks"
     label: "How It Works"
     files:
       - name: "how_it_works"
         label: "How It Works"
         file: "content/howitworks/howitworks.json"
         fields:
-          - name: steps
-            label: Steps
-            widget: list
-            field:
-              name: step
-              label: Step
+          - { name: steps, label: Steps, widget: list }
+

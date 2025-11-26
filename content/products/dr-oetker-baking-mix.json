@@ -1,0 +1,13 @@
+{
+  "id": "dr-oetker-baking-mix",
+  "title": "Dr. Oetker Baking Mix (Assorted)",
+  "direction": "DE_TO_ID",
+  "price_public": 9.5,
+  "price_reseller": 7.5,
+  "currency": "EUR",
+  "images": [
+    "https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v123456789/dr-oetker-baking-mix.jpg"
+  ],
+  "description": "Berbagai varian baking mix Dr. Oetker khas Jerman. Cocok untuk yang hobi baking dengan hasil konsisten.",
+  "active": true
+}

@@ -1,0 +1,13 @@
+{
+  "id": "kopi-gayo-250g",
+  "title": "Kopi Arabika Gayo 250 g (Whole Bean)",
+  "direction": "ID_TO_DE",
+  "price_public": 11,
+  "price_reseller": 8.5,
+  "currency": "EUR",
+  "images": [
+    "https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v123456789/kopi-gayo-250g.jpg"
+  ],
+  "description": "Kopi Arabika Gayo 250 g, biji utuh roasted medium. Cocok untuk manual brew maupun espresso.",
+  "active": true
+}

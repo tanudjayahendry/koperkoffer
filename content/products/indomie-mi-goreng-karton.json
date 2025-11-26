@@ -1,0 +1,13 @@
+{
+  "id": "indomie-mi-goreng-karton",
+  "title": "Indomie Mi Goreng – 1 karton (40 pcs)",
+  "direction": "ID_TO_DE",
+  "price_public": 24,
+  "price_reseller": 20,
+  "currency": "EUR",
+  "images": [
+    "https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v123456789/indomie-mi-goreng-karton.jpg"
+  ],
+  "description": "Satu karton Indomie Mi Goreng isi 40 bungkus. Favorit diaspora Indonesia di Eropa.",
+  "active": true
+}

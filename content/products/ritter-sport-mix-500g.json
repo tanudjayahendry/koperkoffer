@@ -1,0 +1,13 @@
+{
+  "id": "ritter-sport-mix-500g",
+  "title": "Ritter Sport Mini Mix 500 g",
+  "direction": "DE_TO_ID",
+  "price_public": 14,
+  "price_reseller": 11,
+  "currency": "EUR",
+  "images": [
+    "https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v123456789/ritter-sport-mix-500g.jpg"
+  ],
+  "description": "Paket campuran cokelat Ritter Sport mini 500 g, isi berbagai varian rasa populer dari Jerman.",
+  "active": true
+}

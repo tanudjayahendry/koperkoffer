@@ -1,0 +1,13 @@
+{
+  "id": "snack-mixed-indonesia",
+  "title": "Paket Snack Indonesia Mixed",
+  "direction": "ID_TO_DE",
+  "price_public": 19.5,
+  "price_reseller": 16,
+  "currency": "EUR",
+  "images": [
+    "https://res.cloudinary.com/YOUR_CLOUD_NAME/image/upload/v123456789/snack-mixed-indonesia.jpg"
+  ],
+  "description": "Paket snack Indonesia campuran (keripik, wafer, biskuit, dan jajanan ringan) untuk oleh-oleh ke Jerman.",
+  "active": true
+}
